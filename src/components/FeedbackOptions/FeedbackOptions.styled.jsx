@@ -1,12 +1,9 @@
 import styled from 'styled-components';
 
-export const FeedbackList = styled.ul`
+export const FeedbackBox = styled.div`
   display: flex;
   padding: 0;
   justify-content: center;
-`;
-export const FeedbackItem = styled.li`
-  list-style: none;
 `;
 
 export const FeedbackBtn = styled.button`
