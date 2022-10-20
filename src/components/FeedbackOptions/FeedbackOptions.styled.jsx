@@ -1,9 +1,16 @@
 import styled from 'styled-components';
 
-export const FeedbackBox = styled.div`
+export const FeedbackList = styled.ul`
   display: flex;
   padding: 0;
   justify-content: center;
+  list-style: none;
+`;
+
+export const FeedbackItem = styled.li`
+  :not(:last-child) {
+    margin-right: 10px;
+  }
 `;
 
 export const FeedbackBtn = styled.button`
@@ -13,7 +20,6 @@ export const FeedbackBtn = styled.button`
   border-radius: 20px;
   height: 40px;
   width: 70px;
-  margin-right: 10px;
   cursor: pointer;
   :hover {
     background-color: white;

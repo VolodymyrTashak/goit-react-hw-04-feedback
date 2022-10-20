@@ -2,25 +2,29 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   FeedbackBtn,
-  FeedbackBox,
+  FeedbackList,
+  FeedbackItem,
 } from '../FeedbackOptions/FeedbackOptions.styled';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    <FeedbackBox>
+    <FeedbackList>
       {options.map((option, index) => {
         return (
-          <FeedbackBtn
-            key={index}
-            type="button"
-            onClick={onLeaveFeedback}
-            name={option}
-          >
-            {option}
-          </FeedbackBtn>
+          <FeedbackItem key={index}>
+            <FeedbackBtn
+              type="button"
+              onClick={() => {
+                onLeaveFeedback(option);
+              }}
+              name={option}
+            >
+              {option}
+            </FeedbackBtn>
+          </FeedbackItem>
         );
       })}
-    </FeedbackBox>
+    </FeedbackList>
   );
 };
 
