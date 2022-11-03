@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Text } from './Notification.styled';
 import { FaExclamation } from 'react-icons/fa';
+
+import { Text } from './Notification.styled';
 
 export const Notification = ({ message }) => {
   return (

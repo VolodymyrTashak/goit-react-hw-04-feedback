@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import { StatisticsList, StatisticsItem } from './Statistics.styled';
 
 export const Statistics = ({
